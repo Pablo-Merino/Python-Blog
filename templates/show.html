@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+{% block body %}
+<span>Posted on {{post["last_date"]}}</span>
+<hr/>
+<div class="content">
+  {{ post["content"] | safe }}
+</div>
+
+{% endblock %}

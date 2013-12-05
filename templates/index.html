@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<hr/>
+{% for file in posts %}
+<h2>
+  <a class="article" href="/{{file["unique"]}}">{{file["title"]}}</a>
+  <span class="little">{{file["last_date"]}}</span>
+</h2>
+{% endfor %}
+
+{% endblock %}

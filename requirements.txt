@@ -1,0 +1,11 @@
+Flask==0.10.1
+Jinja2==2.7.1
+MarkupSafe==0.18
+Werkzeug==0.9.4
+bzr==2.5.1
+git-remote-helpers==0.1.0
+itsdangerous==0.23
+libxml2-python==2.9.1
+mercurial==2.8
+stevedore==0.13
+wsgiref==0.1.2
