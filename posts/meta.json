@@ -8,6 +8,11 @@
     "file":"recoveringlinux.md",
     "title":"Recovering Linux after vanishing /bin",
     "date":"05/10/2013"
+  },
+  "python":{
+    "file":"python.md",
+    "title":"Python? What?",
+    "date":"06/12/2013"
   }
   
 }

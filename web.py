@@ -39,8 +39,12 @@ def index():
       "unique":post,
       "last_date":datetime.datetime.strptime(meta_file[post]['date'], "%d/%m/%Y").strftime("%B %d, %Y")
     })
-  posts.sort(key=lambda k: k['last_date'], reverse=True)
+  posts.sort(key=lambda k: datetime.datetime.strptime(k['last_date'], '%B %d, %Y'), reverse=True)
   return render_template('index.html', **locals())
+
+@app.route("/favicon.ico")
+def favicon():
+  return ""
 
 """
 Shows a post
@@ -48,14 +52,17 @@ Shows a post
 @app.route("/<post>")
 def show(post):
   in_post = True
-  title = meta_file[post]['title']
-  post = {
-    "title":meta_file[post]['title'],
-    "filename":meta_file[post]['file'],    
-    "last_date":datetime.datetime.strptime(meta_file[post]['date'], "%d/%m/%Y").strftime("%B %d, %Y"),
-    "content":markdowner.convert(open("./posts/%s" % meta_file[post]['file'], 'r').read())
-  }
-  return render_template('show.html', **locals())
+  try:
+    title = meta_file[post]['title']
+    post = {
+      "title":meta_file[post]['title'],
+      "filename":meta_file[post]['file'],    
+      "last_date":datetime.datetime.strptime(meta_file[post]['date'], "%d/%m/%Y").strftime("%B %d, %Y"),
+      "content":markdowner.convert(open("./posts/%s" % meta_file[post]['file'], 'r').read())
+    }
+    return render_template('show.html', **locals())
+  except KeyError:
+    return render_template('error.html', **locals())
 
 """
 Humanizes a file name

@@ -1,0 +1,7 @@
+So recently I've been writing some Python code, as I had some project idea and some of the libraries I found where only Python. I've been also working with the Reddit API through a Python module and rewrote my entire blog to Python. Why would a Ruby head like me do this? Well, I've always wanted to try Python, so the day I started my side project I was like "to the hell, I'm writing this on Python".
+
+Python got a huge community as well as some really great packages, most notably, the Rails and Sinatra counterparts, **Django and Flask**. My new blog was built on Flask itself, using a couple of useful modules, such as `json` or `markdown2`. I wanted to see how good I could build one in a language I literally just started using, and turned out it was pretty easy. Flask includes **Jinja**, which is a Moustache-like templating system. It uses brace variables (`{{ something }}`) to dynamically change the HTML.
+
+Python, such as Ruby, is a **object-oriented language with a clean syntax**. The speed doesn't really matters since both of them run at around the same speed. Python and Ruby are basically the same but different, but why not know both languages? You can get 2x the opportunities you get with only knowing one, so why not? Their syntax is not really akin, but some things are the same on both languages. Python is the language you'd use if you don't like Ruby and viceversa.
+
+Being honest, I like Python as much as I like Ruby so I'll try to maintain both in my head.
