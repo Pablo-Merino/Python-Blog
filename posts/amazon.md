@@ -12,7 +12,9 @@ But **S3** is what I actually love. It's **fast as hell**, and actually really s
 
 Also there's something else which I like, and that's **Route 53**. I was tired of FreeDNS and Cloudflare, so I remembered Amazon offered a DNS hosting service too, so I just went there. Works really good, it's cheap as well, and simple to use.
 
-Also, just to talk about the last service I actually use, **EC2**, is just a classic. Virtual instances that can suit anyone's needs. They have general use instances with a range of CPU cores and RAM amount, to high end memory instances with 244GB of RAM, going through GPU (instances with a GRID K520 card) and disk instances (nearly 50TB of storage).
+Also, just to talk about the last service I actually use, **EC2**, is just a classic. Virtual instances that can suit anyone's needs. They have general use instances with a range of CPU cores and RAM amount, to high end memory instances with 244GB of RAM, going through GPU (instances with a GRID K520 card) and disk instances (nearly 50TB of storage). They also have a really fast Internet connection, meaning you can do things like this:
+
+![AWS Speeds](http://pablo-assets.s3.amazonaws.com/etc/speeds.png)
 
 Amazon got also a lot of other services which can as well, suit anyone needs. Databases, search engines, private clouds, CDNs, analytics,... Basically, a bunch of things for almost anything in the web world.
 
