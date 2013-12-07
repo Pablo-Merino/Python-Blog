@@ -1,6 +1,6 @@
 I recently got a $100 credit for Amazon AWS, and I've been trying different things, notably:
 
-- **Litecoin mining on a GPU instance**: couldn't get it to work, CUDA graphic cards suck for mining (although are really good for other things apart of gaming)
+- **Litecoin mining on a GPU instance**: couldn't get it to work, CUDA graphic cards suck for mining (although are really good for other things apart of gaming). Anyways, the price of a spot instance went up, the LTC difficulty also went up and the price went down, so it's not profitable anymore.
 
 - **Just trying out other AWS services**: I now use Route 53 as my DNS provider, EC2 for my [Dokku](https://github.com/progrium/dokku) instance (just a t1.micro though) and S3 for servig static assets for my sites (they're all now updated for it).
 
