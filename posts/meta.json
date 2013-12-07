@@ -13,6 +13,11 @@
     "file":"python.md",
     "title":"Python? What?",
     "date":"06/12/2013"
+  },
+  "amazon":{
+    "file":"amazon.md",
+    "title":"Now rolling with AWS services!",
+    "date":"07/12/2013"
   }
   
 }
